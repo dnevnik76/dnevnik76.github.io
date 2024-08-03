@@ -1,1 +1,1 @@
-# dnevnik76.github.io
+/index.html
