@@ -1,0 +1,118 @@
+<html><head><base href="https://websim.io/extension-download/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Скачать расширение для Регионального интернет-дневника</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  h1 {
+    color: #6c63ff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .update-info {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .update-info h2 {
+    color: #0050b3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .update-info ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .button {
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .button:hover {
+    background-color: #5a52d5;
+  }
+
+  .button.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  .button.disabled:hover {
+    background-color: #cccccc;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Скачать расширение для Регионального интернет-дневника</h1>
+    <p>Улучшите свой опыт использования Регионального интернет-дневника с нашим расширением!</p>
+    
+    <div class="update-info">
+      <h2>Обновление: 1.1</h2>
+      <ul>
+        <li>Исправлены баги</li>
+        <li>Добавлены новые стили для страницы с оценками</li>
+      </ul>
+    </div>
+    
+    <div class="buttons">
+      <a href="https://websim.io/extension-download/regional-diary-extension.zip" class="button" download>Скачать в ZIP</a>
+      <a href="#" class="button disabled" title="Скоро будет доступно">Скачать в .crx (скоро)</a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.button.disabled').addEventListener('click', function(e) {
+      e.preventDefault();
+      alert('Эта функция скоро будет доступна!');
+    });
+  </script>
+</body>
+</html>
