@@ -106,21 +106,15 @@
     </div>
     
     <div class="buttons">
-      <a href="https://dnevnik76.github.io/dnevnik76.zip" class="button disabled" download>Скачать в ZIP (обновление кнопки)</a>
-      <a href="#" class="button disabled" title="Скоро будет доступно">Скачать в .crx (скоро)</a>
+      <a href="https://dnevnik76.github.io/dnevnik76.zip" class="button disabled" download>Скачать в ZIP</a>
+      <a href="#" class="button disabled" title="Скоро будет доступно">Скачать в .crx</a>
     </div>
   </div>
 
   <script>
     document.querySelector('.button.disabled').addEventListener('click', function(e) {
       e.preventDefault();
-      alert('Этот тип файла скоро будет доступен!');
-    });
-  </script>
-  <script>
-    document.querySelector('.button.updating').addEventListener('click', function(e) {
-      e.preventDefault();
-      alert('Происходит обновление данного типа файлов');
+      alert('Обновление кнопки');
     });
   </script>
 </body>
