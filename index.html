@@ -1,115 +1,84 @@
 <html>
-  <head>
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Скачать расширение для Регионального интернет-дневника</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Разработка расширения прекращена</title>
 <style>
-  body {
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-  }
-
-  .container {
-    background-color: #ffffff;
-    border-radius: 8px;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px;
     text-align: center;
     max-width: 600px;
-    width: 100%;
-  }
-
-  h1 {
-    color: #6c63ff;
-    margin-bottom: 20px;
-  }
-
-  p {
+}
+h1 {
+    color: #d9534f;
+    margin-bottom: 1rem;
+}
+p {
     color: #333;
-    margin-bottom: 30px;
     line-height: 1.6;
-  }
-
-  .update-info {
-    background-color: #e6f7ff;
-    border: 1px solid #91d5ff;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .update-info h2 {
-    color: #0050b3;
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-
-  .update-info ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .button {
-    background-color: #6c63ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+}
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.button {
     display: inline-block;
-  }
-
-  .button:hover {
-    background-color: #5a52d5;
-  }
-
-  .button.disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-
-  .button.disabled:hover {
-    background-color: #cccccc;
-  }
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #46b8da;
+}
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Скачать расширение для Регионального интернет-дневника</h1>
-    <p>Улучшите дизайн электронного дневника(dnevnik76.ru)</p>
-    <p>Расширение сделано: 20%</p>
+<div class="container">
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d9534f">
+        <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/>
+    </svg>
+    <h1>Разработка расширения прекращена!</h1>
+    <p>Мы прекратили разработку расширения из-за смены эл.дневника в Ярославской области. С 16 числа будет действовать новый дневник по новому адресу!</p>
+    <a href="https://school.yarcloud.ru" class="button">Новый дневник</a>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const container = document.querySelector('.container');
+    container.style.opacity = '0';
+    container.style.transform = 'translateY(-20px)';
+    container.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
     
-    <div class="update-info">
-      <h2>Обновление: 1.2 (скоро) </h2>
-      <ul>
-        <li>Обновлено до 3 версии manifest'a</li>
-        <li>Исправлена ошибка при установке расширения</li>
-        <li>Исправлены баги на странице с оценками</li>
-      </ul>
-    </div>
+    setTimeout(() => {
+        container.style.opacity = '1';
+        container.style.transform = 'translateY(0)';
+    }, 100);
 
-  <script>
-    document.querySelector('.button.disabled').addEventListener('click', function(e) {
-      e.preventDefault();
-      alert('Обновление кнопки');
+    const button = document.querySelector('.button');
+    button.addEventListener('mouseover', () => {
+        button.style.transform = 'scale(1.05)';
     });
-  </script>
+    button.addEventListener('mouseout', () => {
+        button.style.transform = 'scale(1)';
+    });
+});
+</script>
 </body>
 </html>
